@@ -5,7 +5,8 @@ class Solution {
             if(bills[i]==5){
                 five++;
             }
-            else if(bills[i]==10 && five>0){
+            else if(bills[i]==10){
+                if(five==0)return false;
                 five--;
                 ten++;
             }
